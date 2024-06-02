@@ -11,7 +11,7 @@ import ExpenseTotal from './components/ExpenseTotal'
 import ExpenseList from './components/ExpenseList'
 import ExpenseItem from './components/ExpenseItem'
 import AllocationForm from './components/AllocationForm'
-
+import CurrencyPicker from './components/CurrecyPicker'
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
@@ -22,25 +22,27 @@ const App = () => {
                     <div className='row mt-3'>
                     <div className='col-sm'>
                         <Budget />
-                    </div>                             
-                </div>
-                <div className='row mt-3'>
+                    </div>
                     <div className='col-sm'>
                         <Remaining />
                     </div>
-                </div>     
-                <div className='row mt-3'>
                     <div className='col-sm'>
                         <ExpenseTotal />
                     </div>
-                </div>     
+                    <div className='col-sm'>
+                        <CurrencyPicker/>
+                    </div>
+
+                </div>
+   
 
                 <div className='row mt-3'>
                     <div className='col-sm'>
                         <ExpenseList/>      
                     </div>
                 </div>
-                <h3>Change allocation</h3>                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <h3>Change allocation</h3>                         
+                         
                 <div className='row mt-3'>
                     <div className='col-sm'>
                         <AllocationForm/>      
